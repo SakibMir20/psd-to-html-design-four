@@ -1,0 +1,848 @@
+/* defult valus start */
+
+* {
+    box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+:focus {
+    outline: 0;
+}
+.section {
+    width: 100%;
+    padding: 90px 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* defult valus end */
+
+/*  Start Deful valus for this Designe */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #f7f7f7;
+}
+/* Font Family */
+@font-face {
+    font-family: "PT Serif";
+    src: url("fonts/pt-serif-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Start typography */
+.section .container .header-of-section {
+    text-align: center;
+    color: #252525;
+    padding: 0 0 50px 0;
+}
+.section .container .header-of-section .s-h2 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section .container .header-of-section .s-p {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 15px 0;
+    line-height: 1.5em;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+}
+/* End typography */
+
+/*  End Deful valus for this Designe */
+
+/* Start Header/First CSS */
+.first-section {
+    padding: 0;
+    z-index: 20;
+}
+
+    /* start Scroll down and sticky nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 3px rgb(212 207 207 / 80%);
+}
+.sticky .top-contract {
+    display: none;
+}
+    /* end Scroll down and sticky nav */
+
+.first-section .top-contract {
+    background-color: rgb(47, 63, 84);
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+}
+.first-section .top-contract .container {
+}
+
+.first-section .top-contract .container .ul {
+}
+.first-section .top-contract .container .left-side-ul {
+    float: left;
+    margin-left: 20px;
+}
+.first-section .top-contract .container .ul li {
+    float: left;
+    padding: 10px 0;
+    margin-right: 10px;
+    color: rgba(170, 170, 170, 1);
+}
+
+.first-section .top-contract .container .ul li a {
+    display: block;
+}
+
+.first-section .top-contract .container .ul i {
+    color: rgba(170, 170, 170, 1);
+    font-size: 16px;
+}
+.first-section .top-contract .container .left-side-ul i {
+    font-size: 14px;
+}
+
+.first-section .top-contract .container .right-side-ul {
+    float: right;
+    margin-right: 20px;
+}
+.first-section .top-contract .container .right-side-ul li span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #787f88;
+}
+
+/* Top Contract End */
+
+.first-section .navbar-full {
+    width: 100%;
+    background-color: #ffffff;
+}
+.first-section .navbar-full .container .logo {
+    float: left;
+    width: 170px;
+    padding: 12px 0;
+}
+.first-section .navbar-full .container .navbar {
+    float: right;
+    padding: 27px 0;
+}
+.first-section .navbar-full .container .navbar > ul > li {
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+
+/* Start DropDown Box */
+.first-section .navbar-full .container .navbar ul li .dropdown-box {
+    position: absolute;
+    top: 30px;
+    width: 470px;
+    height: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #666666;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.first-section .navbar-full .container .navbar ul li:hover .dropdown-box {
+    opacity: 1;
+    visibility: visible;
+    height: 450px;
+    top: 52px;
+}
+.first-section .navbar-full .container .navbar ul li .dropdown-box-2 {
+    width: 250px;
+}
+
+.first-section .navbar-full .container .navbar ul li:hover .dropdown-box-2 {
+    opacity: 1;
+    visibility: visible;
+    height: 180px;
+    top: 52px;
+    overflow: visible;
+}
+
+.first-section .navbar-full .container .dropdown-box-2 .inner-dropdown {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-color: #ffffff;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    z-index: 5;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+}
+
+.first-section .navbar-full .container .dropdown-box-2 li:hover .inner-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.first-section .navbar-full .container .dropdown-box-2 .mx {
+    margin: 0 10px;
+}
+
+.first-section .navbar-full .container .navbar ul li .dropdown-box .left-col {
+    float: left;
+}
+.first-section .navbar-full .container .navbar ul li .dropdown-box .right-col {
+    float: right;
+}
+
+.first-section .navbar-full .container .navbar ul li .dropdown-box h3 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 14px 8px 14px;
+}
+
+.first-section .navbar-full .container .navbar ul li .dropdown-box ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 8px 15px;
+    color: #666666;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.first-section .navbar-full .container .navbar ul li .dropdown-box ul li:hover > a {
+    background-color: #f5f5f5;
+}
+.first-section .navbar-full .container .navbar ul li .dropdown-box-2 ul li {
+    width: 220px;
+    position: relative;
+}
+
+/* End DropDown Box */
+
+.first-section .navbar-full .container .navbar ul > li > a {
+    color: #333333;
+}
+
+.first-section .navbar-full .container .navbar ul li a span {
+    margin: 0 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.first-section .navbar-full .container .navbar .active {
+    color: #ff9900cb;
+}
+.first-section .navbar-full .container .navbar ul li:hover span {
+    color: #ff9900cb;
+}
+
+.first-section .navbar-full .container .navbar .nav-icon {
+    display: none;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav .close-nav {
+    font-size: 35px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    z-index: 1000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav i:hover {
+    color: #b8babb;
+}
+
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav .content-mobile-nav {
+    text-align: center;
+    margin-top: 140px;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav .content-mobile-nav a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+    height: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav .content-mobile-nav a:hover {
+    background-color: rgb(33 143 138 / 72%);
+    padding: 13px 0;
+    color: #ff9900cb;
+}
+.first-section .navbar-full .container .navbar .nav-icon .mobile-nav .content-mobile-nav a span {
+    margin: 0 10px;
+}
+/* End Header/First CSS */
+
+/* Start Second Section CSS */
+.second-section {
+    height: 950px;
+    background-color: rgb(123, 170, 154);
+    background-image: URL("images/landing-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 0;
+}
+
+.second-section .container {
+}
+
+.second-section .container .inner-container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 300px;
+}
+.second-section .container .inner-container .img {
+    width: 250px;
+    margin: 0 auto;
+}
+.second-section .container .inner-container h2 {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 55px;
+    letter-spacing: 0.3px;
+}
+.second-section .container .inner-container h3 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.second-section .container .inner-container h4 {
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+}
+.second-section .container .inner-container .img2 {
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* End Second Section CSS */
+
+/* Start Third Section CSS */
+
+.third-section {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.third-section .container {
+}
+
+.third-section .container .body-of-section {
+}
+.third-section .container .body-of-section .filter-buttons {
+    width: 573px;
+    margin: 0 auto 15px auto;
+    
+}
+
+.third-section .container .body-of-section .filter-buttons .btn {
+    font-family: Lato;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 16px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 13px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.third-section .container .body-of-section .filter-buttons .no-mr {
+    margin-right: 0;
+}
+.third-section .container .body-of-section .filter-buttons .mixitup-control-active {
+    background-color: #333;
+    color: #fff;
+}
+
+.third-section .container .body-of-section .filter-buttons .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.third-section .container .body-of-section .grid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.third-section .container .body-of-section .grid-container .box {
+    width: 23.122%;
+    height: 332px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    background-color: rgba(77, 80, 79, 0.418);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.third-section .container .body-of-section .grid-container .box-4,
+.third-section .container .body-of-section .grid-container .box-8,
+.third-section .container .body-of-section .grid-container .box-12,
+.third-section .container .body-of-section .grid-container .box-16 {
+    margin-right: 0;
+}
+.third-section .container .body-of-section .grid-container .box-17 {
+    margin: 2.5% auto;
+}
+
+/* Start --- Class Add or Remove for Filter Item Responsive */
+.third-section .container .body-of-section .ad-for-pro .box-7,
+.third-section .container .body-of-section .ad-for-pro .box-13 {
+    margin-right: 0;
+}
+
+.third-section .container .body-of-section .ad-for-pro .box-8,
+.third-section .container .body-of-section .ad-for-pro .box-12,
+.third-section .container .body-of-section .ad-for-pro .box-16 {
+    margin-right: 2.5%;
+}
+.third-section .container .body-of-section .ad-for-pro .box-17 {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* Pro end */
+
+.third-section .container .body-of-section .ad-for-free .box-4 {
+    margin-right: 2.5%;
+}
+.third-section .container .body-of-section .ad-for-free .box-9 {
+    margin-right: 0;
+}
+
+/* End ---- Class Add or Remove for Filter Item Responsive */
+
+.third-section .container .body-of-section .grid-container .box .bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.third-section .container .body-of-section .grid-container .box .bg-img img {
+    width: 100%;
+    height: 100%;
+}
+.third-section .container .body-of-section .grid-container .box .bg-color {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 48, 89, 0.96);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.third-section .container .body-of-section .grid-container .box:hover .bg-color {
+    opacity: 1;
+    visibility: visible;
+}
+
+.third-section .body-of-section .grid-container .box .bg-color .content {
+    width: 100%;
+    margin-top: 50%;
+}
+
+.third-section .body-of-section .grid-container .box .bg-color .content h3 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    color: #252525;
+}
+.third-section .container .body-of-section .grid-container .box .bg-color p {
+    font-family: PT Serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* End Third Section CSS */
+
+/* Start Fourth Section CSS */
+.fourth-section {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.fourth-section .container {
+}
+
+.fourth-section .container .body-of-section {
+    color: #e7e7e7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fourth-section .container .body-of-section .item {
+    text-align: left;
+    padding: 30px;
+    width: 31.72%;
+    margin-top: 2.4%;
+    color: rgba(51, 51, 51, 1);
+    border-radius: 5px;
+    transition: all 0.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.fourth-section .container .body-of-section .item:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.fourth-section .container .body-of-section .item i {
+    font-size: 70px;
+}
+.fourth-section .container .body-of-section .item h2 {
+    font-family: Lato;
+    padding: 20px 0;
+}
+.fourth-section .container .body-of-section .item p {
+    color: #666666;
+    line-height: 1.7em;
+}
+
+/* End Fourth Section CSS */
+
+/* Start Five Section CSS */
+
+.fiveth-section {
+    background-color: #ff3860;
+    font-family: Lato;
+}
+.fiveth-section .container .header-of-section {
+    padding-bottom: 40px;
+}
+
+.fiveth-section .container .header-of-section .s-h2 {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    font-size: 80px;
+}
+
+.fiveth-section .container .header-of-section .s-p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.fiveth-section .container .body-of-section {
+    padding-bottom: 30px;
+}
+
+.fiveth-section .container .body-of-section .button-container {
+    margin: 0 auto;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fiveth-section .container .body-of-section .button-container a {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(51, 51, 51, 1);
+    padding: 15px 0;
+    text-align: center;
+    border: 0 solid;
+    display: block;
+    width: 46.5%;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background 0.3s, opacity 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in;
+    -webkit-transition: background 0.3s, opacity 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in;
+    -moz-transition: background 0.3s, opacity 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in;
+    -ms-transition: background 0.3s, opacity 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in;
+    -o-transition: background 0.3s, opacity 0.3s ease-in, border 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+.fiveth-section .container .body-of-section .button-container a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(51, 51, 51, 1);
+}
+
+/* End Five Section CSS */
+
+/* Start Footer Section CSS */
+.footer-section {
+    background-color: #19283f;
+    color: rgba(255, 255, 255, 1);
+    padding: 78px 0;
+}
+
+.footer-section .container {
+}
+.footer-section .container .inner-container {
+    display: flex;
+}
+
+.footer-section .container .inner-container .both-side {
+    width: 50%;
+}
+
+.footer-section .container .inner-container .both-side p,
+.footer-section .container .inner-container .both-side span {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.footer-section .container .inner-container .both-side a {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.footer-section .container .inner-container .both-side h4 {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.footer-section .container .inner-container .both-side .for-boder {
+    height: 2px;
+    background-color: #ffffff;
+    width: 20%;
+}
+
+.footer-section .container .inner-container .both-side {
+    display: flex;
+}
+
+.footer-section .container .inner-container .both-side a {
+    font-size: 13px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.footer-section .container .inner-container .both-side a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-section .container .inner-container .both-side .ltf-rgh-inner {
+    width: 50%;
+}
+
+.footer-section .container .inner-container .left-side .ltf-inner .img {
+    width: 60%;
+}
+
+.footer-section .container .inner-container .left-side .ltf-inner ul,
+.footer-section .container .inner-container .left-side .ltf-inner p {
+    margin-top: 20px;
+}
+
+.footer-section .container .inner-container .left-side .ltf-inner ul {
+    margin-top: 20px;
+}
+.footer-section .container .inner-container .left-side .ltf-inner ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-section .container .inner-container .left-side .ltf-inner ul li a i {
+    font-size: 20px;
+}
+.footer-section .container .inner-container .left-side .ltf-inner ul li a:hover i {
+    color: rgba(255, 152, 0, 1);
+}
+
+/* End ltf-inner */
+.footer-section .container .inner-container .left-side .rgh-inner {
+    padding-left: 15px;
+}
+
+.footer-section .container .inner-container .both-side .cntir-iner-lest {
+    margin-top: 40px;
+}
+
+.footer-section .container .inner-container .left-side .rgh-inner ul li {
+    margin: 0 0 15px 0;
+}
+
+.footer-section .container .inner-container .left-side .rgh-inner ul li .active {
+    color: #ff9900cb;
+}
+
+/* End Left Side */
+
+.footer-section .container .inner-container .right-side {
+}
+.footer-section .container .inner-container .right-side .ltf-rgh-inner {
+    padding: 0 15px;
+}
+
+.footer-section .container .inner-container .right-side .ltf-inner img {
+    width: 50px;
+}
+
+.footer-section .container .inner-container .right-side .ltf-inner a {
+    padding-left: 10px;
+}
+
+.footer-section .container .inner-container .right-side .ltf-inner .leatest-news-item {
+    padding: 20px 0;
+    overflow: hidden;
+}
+.footer-section .container .inner-container .right-side .ltf-inner .leatest-news-item img,
+.footer-section .container .inner-container .right-side .ltf-inner .leatest-news-item a {
+    display: block;
+    float: left;
+}
+
+.footer-section .container .inner-container .right-side .rgh-inner ul li {
+    padding: 8px 0;
+}
+.footer-section .container .inner-container .right-side .rgh-inner ul li span {
+    padding-left: 10px;
+}
+.footer-section .container .inner-container .right-side .rgh-inner form {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.footer-section .container .inner-container .right-side .rgh-inner form input {
+    height: 42px;
+    width: 80%;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-size: 13px;
+    border-width: 1px;
+    padding: 8px 12px;
+    display: block;
+}
+.footer-section .container .inner-container .right-side .rgh-inner form button {
+    width: 20%;
+    display: block;
+    border: 1px solid transparent;
+}
+
+/* End Footer Section CSS */
